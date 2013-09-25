@@ -16,4 +16,9 @@ build:
         name: run gradle
         code: |
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
-
+  after-steps:
+    # Show the build results
+    - script:
+        name: show build result
+        code: |
+          ls -la GettingStarted/build/apk/
