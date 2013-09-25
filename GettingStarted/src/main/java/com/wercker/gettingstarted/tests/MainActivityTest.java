@@ -28,6 +28,6 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         introText = tView.getText().toString();
         assertNotNull(introText);
 
-        assertTrue("Check intro text", introText.equals("Hello world!"));
+        assertTrue("Check intro text", introText.equals("Hello universe!"));
     }
 }
