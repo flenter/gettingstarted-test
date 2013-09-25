@@ -17,7 +17,7 @@ build:
     - script:
         name: run gradle checkConnected
         code: |
-          gradle --project-cache-dir=$WERCKER_CACHE_DIR cIT
+          gradle --project-cache-dir=$WERCKER_CACHE_DIR checkConnected
     - script:
         name: run gradle build
         code: |
