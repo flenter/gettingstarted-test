@@ -15,9 +15,9 @@ build:
     - setup-android-emulator:
         target: android-18
     - script:
-        name: run gradle checkConnected
+        name: run gradle connectedCheck
         code: |
-          gradle --project-cache-dir=$WERCKER_CACHE_DIR checkConnected
+          gradle --project-cache-dir=$WERCKER_CACHE_DIR connectedCheck
     - script:
         name: run gradle build
         code: |
