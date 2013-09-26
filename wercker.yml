@@ -25,7 +25,7 @@ build:
   after-steps:
     # Show the build results
     - script:
-        name: show build result
+        name: inspect build result
         code: |
           ls -la GettingStarted/build/apk/
           cp GettingStarted/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
